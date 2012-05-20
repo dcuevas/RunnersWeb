@@ -24,6 +24,16 @@
 
             </a>
             <h1 style="float:right;font-size:50px;font-weight: bold; font-style: italic ; margin:60px 180px 50px 20px">Escapada Runners</h1>
+
+            <div style="position:relative; right:-520px; ">
+                <g:if test="${session.user}">
+                    <img src="${session.user.profileImg}"><strong>${session.user.name}</strong>
+                    <g:link controller="twitterLogin" action="logout">Logout</g:link>
+                </g:if>
+                <g:else>
+                    <g:link controller="twitterLogin" action="login">Signin with Twitter</g:link>
+                </g:else>
+            </div>
         </div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>

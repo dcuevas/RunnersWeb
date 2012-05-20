@@ -31,7 +31,7 @@
 					
 				</li>
 				</g:if>
-			
+
 				<g:if test="${activityInstance?.points}">
 				<li class="fieldcontain">
 					<span id="points-label" class="property-label"><g:message code="activity.points.label" default="Points" /></span>

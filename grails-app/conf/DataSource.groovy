@@ -26,7 +26,7 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://mysql-runners.jelastic.com/runnersWeb"
+            url = "jdbc:mysql://mysql-escapada.jelastic.dogado.eu/runnersWeb"
             pooled = true
             properties {
                maxActive = -1

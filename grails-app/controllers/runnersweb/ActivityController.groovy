@@ -4,6 +4,8 @@ import org.springframework.dao.DataIntegrityViolationException
 
 class ActivityController {
 
+    def activityPointsService
+
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
@@ -21,8 +23,14 @@ class ActivityController {
 
     def save() {
         def activityInstance = new Activity(params)
+        Integer points = activityPointsService.addActivityPoints(activityInstance)
+        Runner runner = activityInstance.getRunner()
+        runner.points += points
+
+        runner.save()
         if (!activityInstance.save(flush: true)) {
             render(view: "create", model: [activityInstance: activityInstance])
+
             return
         }
 

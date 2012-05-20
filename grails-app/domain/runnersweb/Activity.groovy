@@ -22,6 +22,19 @@ class Activity {
     }
 
     String toString() {
-        type
+        String total = "$notes - $type: "
+        points.each { it ->
+            total += "$it.value"
+            System.out.println(total)
+        }
+        return total
+    }
+
+    Integer getTotalPoints() {
+        Integer totalPoints = 0
+        points.each { point ->
+            totalPoints += point.value
+        }
+        return totalPoints
     }
 }

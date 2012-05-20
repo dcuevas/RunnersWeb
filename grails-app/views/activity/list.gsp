@@ -27,6 +27,8 @@
 						<g:sortableColumn property="type" title="${message(code: 'activity.type.label', default: 'Type')}" />
 					
 						<g:sortableColumn property="notes" title="${message(code: 'activity.notes.label', default: 'Notes')}" />
+
+                        <g:sortableColumn property="totalPoints" title="${message(code: 'activity.totalPoints.label', default: 'Points')}" />
 					
 						<g:sortableColumn property="dateCreated" title="${message(code: 'activity.dateCreated.label', default: 'Date Created')}" />
 					
@@ -45,6 +47,8 @@
 						<td><g:link action="show" id="${activityInstance.id}">${fieldValue(bean: activityInstance, field: "type")}</g:link></td>
 					
 						<td>${fieldValue(bean: activityInstance, field: "notes")}</td>
+
+                        <td>${fieldValue(bean: activityInstance, field: "totalPoints")}</td>
 					
 						<td><g:formatDate date="${activityInstance.dateCreated}" /></td>
 					

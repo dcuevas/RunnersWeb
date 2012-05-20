@@ -10,7 +10,6 @@ class PointType {
 
     static constraints = {
         name blank: false, nullable: null, unique: true
-        description nullable: true
         pointsGiven blank:false, nullable: false
         description nullable:true, blank:true, maxSize:5000
         dateCreated display: false

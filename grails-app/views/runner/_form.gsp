@@ -59,11 +59,3 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: runnerInstance, field: 'circles', 'error')} ">
-	<label for="circles">
-		<g:message code="runner.circles.label" default="Circles" />
-		
-	</label>
-	<g:select name="circles" from="${runnersweb.Circle.list()}" multiple="multiple" optionKey="id" size="5" value="${runnerInstance?.circles*.id}" class="many-to-many"/>
-</div>
-

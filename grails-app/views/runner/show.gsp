@@ -78,18 +78,7 @@
 					
 				</li>
 				</g:if>
-			
-				<g:if test="${runnerInstance?.circles}">
-				<li class="fieldcontain">
-					<span id="circles-label" class="property-label"><g:message code="runner.circles.label" default="Circles" /></span>
-					
-						<g:each in="${runnerInstance.circles}" var="c">
-						<span class="property-value" aria-labelledby="circles-label"><g:link controller="circle" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
+
 				<g:if test="${runnerInstance?.dateCreated}">
 				<li class="fieldcontain">
 					<span id="dateCreated-label" class="property-label"><g:message code="runner.dateCreated.label" default="Date Created" /></span>

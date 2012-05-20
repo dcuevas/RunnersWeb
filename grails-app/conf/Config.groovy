@@ -99,3 +99,8 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+consumerKey="JXH81KifPFSoWaY9bQwxKQ"
+consumerSecret="o9zeAWDwENriqIwYeXZJsEd8wGfRrf0HlNwdV2AgRP4"
+
+puntosPorKmName='puntosPorKm'
