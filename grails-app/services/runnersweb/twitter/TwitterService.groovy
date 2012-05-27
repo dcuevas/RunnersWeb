@@ -1,4 +1,4 @@
-package runnersweb
+package runnersweb.twitter
 
 import org.codehaus.groovy.grails.commons.*
 import twitter4j.*
